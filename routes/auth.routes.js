@@ -1,7 +1,6 @@
 const {Router} = require('express')
 const bcrypt = require('bcryptjs')
 const config = require('config')
-const {check, validationResult} = require('express-validator')
 const User = require('../models/User')
 const { check, validationResult } = require('express-validator')
 const router = Router()
@@ -12,7 +11,7 @@ router.post(
     '/register',
     [
         check('email', 'Incorrect email').isEmail(),
-        check('password', 'Your password must be at least6 sumbols').isLength({min: 6})
+        check('password', 'Your password must be at least sumbols').isLength({min: 6})
     ],
     async (req, res) => {
         try {
