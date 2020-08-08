@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "jwtSecret" : "marhotskii anton",
+    "mongoUri": "mongodb+srv://antek:antek@mern.fnykw.mongodb.net/app?retryWrites=true&w=majority",
+    "baseUrl" : "http://localhost:5000"
+}
